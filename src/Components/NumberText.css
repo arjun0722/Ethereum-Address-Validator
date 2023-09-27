@@ -53,6 +53,7 @@
   line-height: 19.4px;
   position: relative;
   padding: 0px 15px;
+  overflow: scroll;
 }
 
 .leftBox::before {
