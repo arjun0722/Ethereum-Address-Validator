@@ -49,11 +49,10 @@
 
 .leftBox {
   background-color: #0f131b;
-  width: 100px;
   height: 404px;
   line-height: 19.4px;
-  overflow: scroll;
   position: relative;
+  padding: 0px 15px;
 }
 
 .leftBox::before {

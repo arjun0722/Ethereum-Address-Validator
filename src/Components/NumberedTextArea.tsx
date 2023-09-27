@@ -123,78 +123,148 @@ function NumberedTextArea() {
  
 
   return (
+    // <div className="container">
+    //   <div className="innercontainer">
+    //     <div className="texttop">
+    //       <div>
+    //         <h4>{Address}</h4>
+    //       </div>
+    //       <div>
+    //         <h4>{upload_file}</h4>
+    //       </div>
+    //     </div>
+
+    //     <div className="TextBox">
+    //       <div className="leftBox">
+    //         {sideNumber.map((num) => {
+    //           return <div className="num1">{num}</div>;
+    //         })}
+    //       </div>
+    //       <div className="rightbox">
+    //         <textarea
+    //           className="textcontainer"
+    //           value={input}
+    //           onChange={(e) => handleInput(e)}
+    //         />
+    //       </div>
+    //     </div>
+
+    //     <div className="textbottom">
+    //       <div>
+    //         <h4>{delimeter}</h4>
+    //       </div>
+    //       <div>
+    //         <h4>{example}</h4>
+    //       </div>
+    //     </div>
+
+    //     {isDuplicate ? (
+    //       <div className="isDuplicate">
+    //         <div className="extratext">
+    //           <h4>{Duplicate}</h4>
+    //         </div>
+    //         <div className="nextbuttons">
+    //           <div>
+    //             <Button
+    //               className="btn_1"
+    //               onClick={() => switchCaseFunc(keepfirstone)}
+    //             >
+    //               {keep_the_first_one}
+    //             </Button>
+    //           </div>
+    //           <div className="btn_slash">|</div>
+    //           <div>
+    //             <Button
+    //               className="btn_1"
+    //               onClick={() => switchCaseFunc(combine)}
+    //             >
+    //               {combine_balance}
+    //             </Button>
+    //           </div>
+    //         </div>
+    //       </div>
+    //     ) : null}
+    //     <div>
+    //       {errors.map((error, index) => (
+    //         <Error key={index} message={error} /> // Render each error message
+    //       ))}
+    //     </div>
+
+    //     <Button disabled={input.length > 0 ? false : true} className="btn" onClick={() => switchCaseFunc(submit)}>
+    //       <span>{next}</span>
+    //     </Button>
+    //   </div>
+    // </div>
     <div className="container">
-      <div className="innercontainer">
-        <div className="texttop">
-          <div>
-            <h4>{Address}</h4>
-          </div>
-          <div>
-            <h4>{upload_file}</h4>
-          </div>
-        </div>
-
-        <div className="TextBox">
-          <div className="leftBox">
-            {sideNumber.map((num) => {
-              return <div className="num1">{num}</div>;
-            })}
-          </div>
-          <div className="rightbox">
-            <textarea
-              className="textcontainer"
-              value={input}
-              onChange={(e) => handleInput(e)}
-            />
-          </div>
-        </div>
-
-        <div className="textbottom">
-          <div>
-            <h4>{delimeter}</h4>
-          </div>
-          <div>
-            <h4>{example}</h4>
-          </div>
-        </div>
-
-        {isDuplicate ? (
-          <div className="isDuplicate">
-            <div className="extratext">
-              <h4>{Duplicate}</h4>
-            </div>
-            <div className="nextbuttons">
-              <div>
-                <Button
-                  className="btn_1"
-                  onClick={() => switchCaseFunc(keepfirstone)}
-                >
-                  {keep_the_first_one}
-                </Button>
-              </div>
-              <div className="btn_slash">|</div>
-              <div>
-                <Button
-                  className="btn_1"
-                  onClick={() => switchCaseFunc(combine)}
-                >
-                  {combine_balance}
-                </Button>
-              </div>
-            </div>
-          </div>
-        ) : null}
+    <div className="innercontainer">
+      <div className="texttop">
         <div>
-          {errors.map((error, index) => (
-            <Error key={index} message={error} /> // Render each error message
-          ))}
+          <h4>{Address}</h4>
         </div>
-
-        <Button disabled={input.length > 0 ? false : true} className="btn" onClick={() => switchCaseFunc(submit)}>
-          <span>{next}</span>
-        </Button>
+        <div>
+          <h4>{upload_file}</h4>
+        </div>
       </div>
+
+      <div className="TextBox">
+        <div className="leftBox">
+          {sideNumber.map((num) => {
+            return <div className="num1" key={num}>{num}</div>;
+          })}
+        </div>
+        <div className="rightbox">
+          <textarea
+            className="textcontainer"
+            value={input}
+            onChange={(e) => handleInput(e)}
+          />
+        </div>
+      </div>
+
+      <div className="textbottom">
+        <div>
+          <h4>{delimeter}</h4>
+        </div>
+        <div>
+          <h4>{example}</h4>
+        </div>
+      </div>
+
+      {isDuplicate ? (
+        <div className="isDuplicate">
+          <div className="extratext">
+            <h4>{Duplicate}</h4>
+          </div>
+          <div className="nextbuttons">
+            <div>
+              <button className="btn_1" onClick={() => switchCaseFunc(keepfirstone)}>
+                {keep_the_first_one}
+              </button>
+            </div>
+            <div className="btn_slash">|</div>
+            <div>
+              <button className="btn_1" onClick={() => switchCaseFunc(combine)}>
+                {combine_balance}
+              </button>
+            </div>
+          </div>
+        </div>
+      ) : null}
+      <div>
+        {errors.map((error, index) => (
+          <Error key={index} message={error} /> // Render each error message
+        ))}
+      </div>
+
+      <button
+        disabled={input.length > 0 ? false : true}
+        className="btn"
+        onClick={() => switchCaseFunc(submit)}
+      >
+        <span>{next}</span>
+      </button>
     </div>
+  </div>
   );
 }
 
