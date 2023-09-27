@@ -1,0 +1,154 @@
+.btn {
+  background: linear-gradient(to right, #b56ff7, #7e5dda);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  width: 900px;
+  color: whitesmoke;
+  border-radius: 20px;
+  height: 3rem;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.innercontainer{
+  width: 50%;
+  margin: auto;
+}
+.texttop{
+  display: flex;
+  justify-content: space-around;
+  color: whitesmoke;
+  margin: 0px -50px;
+}
+
+.texttop h4{
+  font-weight: 400;
+}
+
+.TextBox{
+  display: flex;
+  justify-content: center;
+  height: 400px;
+}
+
+/* .leftBox{
+  background-color: #0f131b;
+  width: 100px;
+  height: 404px;
+  border-right: 1px solid white;
+  line-height: 19.4px;
+  overflow: scroll;
+} */
+
+.leftBox {
+  background-color: #0f131b;
+  width: 100px;
+  height: 404px;
+  line-height: 19.4px;
+  overflow: scroll;
+  position: relative;
+}
+
+.leftBox::before {
+  content: '';
+  position: absolute;
+  top: 5%;
+  bottom: 5%;
+  right: 0;
+  width: 1px;
+  background-color: black;
+  z-index: 1; /* Ensure it appears above the scrollbar */
+  border-right: 1px solid white;
+}
+.leftBox::-webkit-scrollbar {
+  width: 0.1px; /* Adjust the width as needed */
+}
+
+.leftBox::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Hide the thumb */
+}
+
+.leftBox::-webkit-scrollbar-track {
+  background-color: transparent; /* Hide the track */
+}
+
+.num1{
+  font-size: 14px;
+  color: white;
+}
+.textcontainer{
+  min-height: 400px;
+  min-width: 900px;
+  background-color: #0f131b;
+  color: whitesmoke;
+  border: none;
+  outline: none;
+  font-size:15px;
+  max-height: 400px;
+  max-width: 900px;
+  line-height: 19.2px;
+  /* overflow: hidden; */
+}
+.textcontainer::-webkit-scrollbar {
+  width: 0.1em; /* Adjust the width as needed */
+}
+
+.textcontainer::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Hide the thumb */
+}
+
+.textcontainer::-webkit-scrollbar-track {
+  background-color: transparent; /* Hide the track */
+}
+
+
+.textbottom{
+  display: flex;
+  justify-content: space-evenly;
+  color: whitesmoke;
+}
+
+.textbottom h4{
+  font-weight: 400;
+  color: whitesmoke;
+}
+.extratext h4{
+  font-weight: 400;
+}
+
+.nextbuttons{
+  display: flex;
+}
+.btn_1{
+  color: #bd1a1a !important;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.btn_slash{
+  color: #bd1a1a !important;
+  margin-top: 4px;
+}
+.btn{
+  border-radius: 20px !important;
+}
+.btn span{
+  color: whitesmoke;
+}
+.isDuplicate{
+  display: flex;
+  justify-content: space-evenly;
+  color: whitesmoke;
+  align-items: center;
+}
+
+
+
+

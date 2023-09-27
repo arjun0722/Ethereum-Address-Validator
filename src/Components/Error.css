@@ -1,0 +1,9 @@
+.error_style{
+    width: 800px;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: rgba(37,39,45,255) !important;
+    border: 1px solid #bd1a1a;
+    color: #bd1a1a !important;
+}
