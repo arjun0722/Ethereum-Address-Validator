@@ -11,28 +11,28 @@
   border-radius: 20px;
   height: 3rem;
 }
-.container{
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
 }
-.innercontainer{
+.innercontainer {
   width: 50%;
   margin: auto;
 }
-.texttop{
+.texttop {
   display: flex;
   justify-content: space-around;
   color: whitesmoke;
   margin: 0px -50px;
 }
 
-.texttop h4{
+.texttop h4 {
   font-weight: 400;
 }
 
-.TextBox{
+.TextBox {
   display: flex;
   justify-content: center;
   height: 400px;
@@ -52,12 +52,12 @@
   height: 404px;
   line-height: 19.4px;
   position: relative;
-  padding: 0px 15px;
+  padding: 0px 20px;
   overflow: scroll;
 }
 
 .leftBox::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 5%;
   bottom: 5%;
@@ -79,18 +79,18 @@
   background-color: transparent; /* Hide the track */
 }
 
-.num1{
+.num1 {
   font-size: 14px;
   color: white;
 }
-.textcontainer{
+.textcontainer {
   min-height: 400px;
   min-width: 900px;
   background-color: #0f131b;
   color: whitesmoke;
   border: none;
   outline: none;
-  font-size:15px;
+  font-size: 15px;
   max-height: 400px;
   max-width: 900px;
   line-height: 19.2px;
@@ -108,47 +108,42 @@
   background-color: transparent; /* Hide the track */
 }
 
-
-.textbottom{
+.textbottom {
   display: flex;
   justify-content: space-evenly;
   color: whitesmoke;
 }
 
-.textbottom h4{
+.textbottom h4 {
   font-weight: 400;
   color: whitesmoke;
 }
-.extratext h4{
+.extratext h4 {
   font-weight: 400;
 }
 
-.nextbuttons{
+.nextbuttons {
   display: flex;
 }
-.btn_1{
+.btn_1 {
   color: #bd1a1a !important;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-.btn_slash{
+.btn_slash {
   color: #bd1a1a !important;
   margin-top: 4px;
 }
-.btn{
+.btn {
   border-radius: 20px !important;
 }
-.btn span{
+.btn span {
   color: whitesmoke;
 }
-.isDuplicate{
+.isDuplicate {
   display: flex;
   justify-content: space-evenly;
   color: whitesmoke;
   align-items: center;
 }
-
-
-
-
